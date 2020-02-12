@@ -8,10 +8,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-
+                $(".naruto").click(function(){
+                    $(this).hide();
+                });
+                $(".restore").click(function(){
+                    $(".naruto").show();
+                });
             });
         </script>
-        <title>jQuery: Dissapearing NInja</title>
+        <title>jQuery: Disappearing Ninja</title>
     </head>
     <body>
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -81,7 +86,7 @@
                   Dissapearing Ninjas
                 </h1>
                 <h2 class="subtitle">
-                  Aún falta implementar attr, val, text.
+                  This is my ninja way!.
                 </h2>
               </div>
             </div>
@@ -90,22 +95,22 @@
             <div class="notification">
                 <div class="columns is-inline-block">
                     <div class="column">
+                            <img class="naruto naruto is-128x128" src="naruto.png">
+                    </div>
+                </div>
+                <div class="columns is-inline-block">
+                    <div class="column">
                             <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
-                    </div>
-                </div>
-                <div class="columns is-inline-block">
-                    <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
             </div>
@@ -114,24 +119,29 @@
             <div class="notification">
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
                 <div class="columns is-inline-block">
                     <div class="column">
-                            <img class="is-128x128" src="naruto.png">
+                            <img class="naruto is-128x128" src="naruto.png">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container is-fullhd box5-8">
+            <div class="notification">
+            <button class="button restore is-dark is-centered has-addons">Restore</button>
             </div>
         </div>
     </body>
